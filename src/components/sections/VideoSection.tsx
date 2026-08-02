@@ -48,7 +48,7 @@ export default function VideoSection() {
       {/* ghost word drifting behind */}
       <div
         aria-hidden
-        className="reel-ghost pointer-events-none absolute top-10 left-0 font-heading text-[26vw] leading-none font-extrabold whitespace-nowrap text-stroke opacity-40 select-none"
+        className="reel-ghost pointer-events-none absolute top-10 left-0 font-heading text-[40vw] leading-none font-extrabold whitespace-nowrap text-stroke opacity-40 select-none sm:text-[26vw]"
       >
         SHOWREEL — SHOWREEL
       </div>
@@ -60,7 +60,7 @@ export default function VideoSection() {
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
               Showreel — 2025
             </p>
-            <h2 className="font-heading text-5xl leading-[0.98] font-bold text-white md:text-7xl">
+            <h2 className="font-heading text-4xl leading-[0.98] font-bold text-white sm:text-5xl md:text-7xl">
               Motion, in <span className="font-accent font-normal text-gold italic">focus.</span>
             </h2>
           </div>

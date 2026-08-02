@@ -100,16 +100,16 @@ export default function HeroSection() {
         {/* ——— Wordmark in front of the lens ——— */}
         <div className="pointer-events-none absolute inset-0 z-[15] flex flex-col items-center justify-center text-center">
           <div className="overflow-hidden">
-            <span className="hero-line hero-line-left font-heading block text-[21vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white md:text-[15.5vw]">
+            <span className="hero-line hero-line-left font-heading block text-[22vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[20vw] md:text-[15.5vw]">
               OMKAR
             </span>
           </div>
           <div className="overflow-hidden">
-            <span className="hero-line hero-line-right font-heading block text-[21vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white md:text-[15.5vw]">
+            <span className="hero-line hero-line-right font-heading block text-[22vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[20vw] md:text-[15.5vw]">
               LANGHE
             </span>
           </div>
-          <p className="hero-sub font-accent mt-4 text-2xl text-gold italic opacity-0 md:text-4xl">
+          <p className="hero-sub font-accent mt-3 text-xl text-gold italic opacity-0 sm:text-2xl md:text-4xl">
             production
           </p>
         </div>
@@ -148,39 +148,39 @@ export default function HeroSection() {
         </div>
 
         {/* ——— Phase two: intro panel ——— */}
-        <div className="hero-panel pointer-events-none absolute inset-0 z-20 flex items-end pb-16 md:items-center md:pb-0">
-          <div className="hero-panel-inner ml-auto w-full max-w-xl px-6 opacity-0 md:pr-24 md:pl-0">
-            <p className="kicker mb-5 flex items-center gap-3">
+        <div className="hero-panel pointer-events-none absolute inset-0 z-20 flex items-end pb-12 md:items-center md:pb-0">
+          <div className="hero-panel-inner w-full px-5 opacity-0 sm:px-6 md:ml-auto md:max-w-xl md:pr-24 md:pl-0">
+            <p className="kicker mb-4 flex items-center gap-3">
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
               Cinematic photography &amp; film
             </p>
-            <h2 className="font-heading text-4xl leading-[1.02] font-bold text-white md:text-6xl">
+            <h2 className="font-heading text-3xl leading-[1.02] font-bold text-white sm:text-4xl md:text-6xl">
               Moments,
               <br />
               made <span className="font-accent font-normal text-gold italic">cinematic.</span>
             </h2>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-zinc-400 md:text-lg">
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-zinc-400 sm:text-base md:text-lg">
               I&apos;m Omkar — a photographer and videographer who treats every frame like a
               film still. Weddings, portraits, brand films: stories told through light,
               depth and motion.
             </p>
-            <div className="pointer-events-auto mt-9 flex flex-wrap items-center gap-4">
+            <div className="pointer-events-auto mt-7 flex flex-wrap items-center gap-3 sm:gap-4">
               <button
                 onClick={() => scrollToTarget("#gallery")}
-                className="group flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 font-mono text-[11px] font-medium tracking-[0.2em] text-black uppercase transition-all duration-400 glow-amber hover:bg-gold-soft"
+                className="group flex items-center gap-2.5 rounded-full bg-gold px-5 py-3 font-mono text-[11px] font-medium tracking-[0.2em] text-black uppercase transition-all duration-400 glow-amber hover:bg-gold-soft sm:px-7 sm:py-3.5"
               >
                 View the work
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
               <button
                 onClick={() => scrollToTarget("#showreel")}
-                className="group flex items-center gap-2.5 rounded-full border border-white/20 px-7 py-3.5 font-mono text-[11px] tracking-[0.2em] text-white uppercase transition-all duration-400 hover:border-gold hover:text-gold"
+                className="group flex items-center gap-2.5 rounded-full border border-white/20 px-5 py-3 font-mono text-[11px] tracking-[0.2em] text-white uppercase transition-all duration-400 hover:border-gold hover:text-gold sm:px-7 sm:py-3.5"
               >
                 <Play className="h-4 w-4 fill-current" />
                 Showreel
               </button>
             </div>
-            <p className="mt-8 font-mono text-[10px] tracking-[0.28em] text-zinc-600 uppercase">
+            <p className="mt-6 font-mono text-[10px] tracking-[0.28em] text-zinc-600 uppercase">
               250+ stories · 4K delivery · worldwide
             </p>
           </div>

@@ -65,8 +65,8 @@ export default function AboutSection() {
   );
 
   return (
-    <section ref={sectionRef} id="about" className="relative overflow-hidden py-28 md:py-40">
-      <div className="mx-auto grid max-w-[1600px] gap-16 px-5 md:px-10 lg:grid-cols-12 lg:gap-12">
+    <section ref={sectionRef} id="about" className="relative overflow-hidden py-20 md:py-40">
+      <div className="mx-auto grid max-w-[1600px] gap-14 px-5 md:px-10 lg:grid-cols-12 lg:gap-12">
         {/* ——— Portrait ——— */}
         <div className="relative lg:col-span-5">
           <div className="relative mx-auto max-w-md lg:max-w-none">
@@ -96,7 +96,7 @@ export default function AboutSection() {
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             The craft — about Omkar
           </p>
-          <h2 className="about-reveal font-heading text-5xl leading-[0.98] font-bold text-white md:text-7xl">
+          <h2 className="about-reveal font-heading text-4xl leading-[0.98] font-bold text-white sm:text-5xl md:text-7xl">
             The eye behind <span className="font-accent font-normal text-gold italic">the lens</span>
           </h2>
 
@@ -108,22 +108,22 @@ export default function AboutSection() {
           </p>
 
           <blockquote className="about-reveal mt-8 border-l-2 border-gold pl-6">
-            <p className="font-accent max-w-lg text-2xl leading-snug text-zinc-300 italic md:text-3xl">
+            <p className="font-accent max-w-lg text-xl leading-snug text-zinc-300 italic sm:text-2xl md:text-3xl">
               “Anyone can record what happened. I shoot how it felt.”
             </p>
           </blockquote>
 
           {/* stats */}
-          <div className="about-reveal mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-white/8 bg-white/8 md:grid-cols-4">
+          <div className="about-reveal mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-white/8 bg-white/8">
             {STATS.map((stat) => (
-              <div key={stat.label} className="bg-noir px-6 py-7">
-                <p className="font-heading text-4xl font-extrabold text-white md:text-5xl">
+              <div key={stat.label} className="bg-noir px-4 py-5 sm:px-6 sm:py-7">
+                <p className="font-heading text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
                   <span className="stat-value tabular-nums" data-value={stat.value}>
                     {stat.value}
                   </span>
                   <span className="text-gold">{stat.suffix}</span>
                 </p>
-                <p className="mt-2 font-mono text-[10px] tracking-[0.22em] text-zinc-500 uppercase">
+                <p className="mt-1 font-mono text-[10px] tracking-[0.22em] text-zinc-500 uppercase sm:mt-2">
                   {stat.label}
                 </p>
               </div>
@@ -141,7 +141,7 @@ export default function AboutSection() {
               >
                 <span className="font-mono text-xs text-gold">{service.index}</span>
                 <span className="flex-1">
-                  <span className="font-heading block text-xl font-bold text-white transition-colors duration-300 group-hover:text-gold md:text-2xl">
+                  <span className="font-heading block text-lg font-bold text-white transition-colors duration-300 group-hover:text-gold sm:text-xl md:text-2xl">
                     {service.title}
                   </span>
                   <span className="mt-1 block text-sm text-zinc-500">{service.description}</span>

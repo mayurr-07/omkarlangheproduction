@@ -110,7 +110,7 @@ export default function ContactSection() {
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             Let&apos;s create — bookings open 2025/26
           </p>
-          <h2 className="contact-reveal font-heading text-5xl leading-[0.98] font-bold text-white md:text-7xl">
+          <h2 className="contact-reveal font-heading text-4xl leading-[0.98] font-bold text-white sm:text-5xl md:text-7xl">
             Tell me your <span className="font-accent font-normal text-gold italic">story.</span>
             <br />
             I&apos;ll bring the light.
@@ -177,7 +177,7 @@ export default function ContactSection() {
         </div>
 
         {/* ——— Form card ——— */}
-        <div className="contact-card contact-reveal glass glow-amber rounded-2xl p-7 md:p-10">
+        <div className="contact-card contact-reveal glass glow-amber rounded-2xl p-5 sm:p-7 md:p-10">
           {status === "sent" ? (
             <div className="flex h-full min-h-[420px] flex-col items-center justify-center text-center">
               <span className="relative flex h-20 w-20 items-center justify-center">

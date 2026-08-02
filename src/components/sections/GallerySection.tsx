@@ -93,7 +93,7 @@ export default function GallerySection() {
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
               Selected works — 2024 / 25
             </p>
-            <h2 className="font-heading text-4xl font-bold text-white md:text-6xl">
+            <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl md:text-6xl">
               The <span className="font-accent font-normal text-gold italic">archive</span>
             </h2>
           </div>
@@ -116,22 +116,22 @@ export default function GallerySection() {
             {CHAPTERS.map((chapter, ci) => (
               <div key={chapter.id} className="flex shrink-0 items-center gap-8 md:gap-14">
                 {/* chapter title card */}
-                <article className="flex w-[76vw] shrink-0 flex-col justify-center sm:w-[52vw] lg:w-[30vw]">
-                  <p className="kicker mb-5 flex items-center gap-3">
+                <article className="flex w-[82vw] shrink-0 flex-col justify-center sm:w-[60vw] lg:w-[32vw]">
+                  <p className="kicker mb-4 flex items-center gap-3 sm:mb-5">
                     <span className="text-gold">{chapter.index}</span>
                     <span className="h-px w-10 bg-white/20" />
                     {chapter.id}
                   </p>
-                  <h3 className="font-heading text-6xl leading-[0.92] font-extrabold text-white md:text-8xl">
+                  <h3 className="font-heading text-5xl leading-[0.92] font-extrabold text-white sm:text-6xl md:text-8xl">
                     {chapter.title}
                   </h3>
-                  <p className="font-accent mt-3 text-2xl text-gold italic md:text-3xl">
+                  <p className="font-accent mt-3 text-xl text-gold italic sm:text-2xl md:text-3xl">
                     {chapter.tagline}
                   </p>
-                  <p className="mt-6 max-w-sm text-sm leading-relaxed text-zinc-400 md:text-base">
+                  <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-400 sm:mt-6 md:text-base">
                     {chapter.description}
                   </p>
-                  <p className="mt-8 font-mono text-[10px] tracking-[0.3em] text-zinc-600 uppercase">
+                  <p className="mt-6 font-mono text-[10px] tracking-[0.3em] text-zinc-600 uppercase sm:mt-8">
                     0{chapter.items.length} frames — click to enlarge
                   </p>
                 </article>
@@ -143,7 +143,7 @@ export default function GallerySection() {
                     data-cursor="view"
                     onClick={() => setActive(globalIndex(ci, ii))}
                     className={cn(
-                      "group relative my-auto h-[52vh] w-auto shrink-0 cursor-pointer md:h-[66vh]",
+                      "group relative my-auto h-[44vh] w-auto shrink-0 cursor-pointer sm:h-[52vh] md:h-[66vh]",
                       item.ratio === "portrait" ? "aspect-[3/4]" : "aspect-[16/10]",
                     )}
                   >

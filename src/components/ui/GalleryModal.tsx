@@ -115,13 +115,34 @@ export default function GalleryModal({ items, index, onClose, onNav }: Props) {
           >
             <X className="h-4 w-4" />
           </button>
+          {/* mobile: bottom-center nav row */}
+          <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-4 md:hidden">
+            <button
+              onClick={(e) => { e.stopPropagation(); prev(); }}
+              aria-label="Previous image"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur-sm"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <span className="font-mono text-[10px] tracking-[0.3em] text-zinc-400 tabular-nums">
+              {pad2(index! + 1)} / {pad2(items.length)}
+            </span>
+            <button
+              onClick={(e) => { e.stopPropagation(); next(); }}
+              aria-label="Next image"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur-sm"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
+          {/* desktop: side arrows */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               prev();
             }}
             aria-label="Previous image"
-            className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:border-gold hover:text-gold md:left-6"
+            className="absolute left-4 top-1/2 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:border-gold hover:text-gold md:flex md:left-6"
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
@@ -131,7 +152,7 @@ export default function GalleryModal({ items, index, onClose, onNav }: Props) {
               next();
             }}
             aria-label="Next image"
-            className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:border-gold hover:text-gold md:right-6"
+            className="absolute right-4 top-1/2 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:border-gold hover:text-gold md:flex md:right-6"
           >
             <ChevronRight className="h-4 w-4" />
           </button>
