@@ -2,19 +2,15 @@ const fs = require("fs");
 const path = require("path");
 
 const distDir = path.join(__dirname, "../dist");
-const publicDir = path.join(__dirname, "../public");
-const nextDir = path.join(__dirname, "../.next");
+const outDir = path.join(__dirname, "../out");
 
-if (!fs.existsSync(distDir)) {
-  fs.mkdirSync(distDir, { recursive: true });
+if (fs.existsSync(distDir)) {
+  fs.rmSync(distDir, { recursive: true, force: true });
 }
 
-if (fs.existsSync(publicDir)) {
-  fs.cpSync(publicDir, distDir, { recursive: true });
+if (fs.existsSync(outDir)) {
+  fs.cpSync(outDir, distDir, { recursive: true, dereference: true });
+  console.log("[copy-dist] Successfully exported static site to dist/ with dereferenced files!");
+} else {
+  console.warn("[copy-dist] out/ directory not found!");
 }
-
-if (fs.existsSync(nextDir)) {
-  fs.cpSync(nextDir, path.join(distDir, ".next"), { recursive: true });
-}
-
-console.log("[copy-dist] Successfully created and populated dist/ directory!");

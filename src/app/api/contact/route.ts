@@ -1,6 +1,8 @@
 import { db } from "@/db";
 import { messages } from "@/db/schema";
 
+export const dynamic = "force-static";
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 const ALLOWED_TYPES = new Set([

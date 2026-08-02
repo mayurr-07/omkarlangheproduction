@@ -1,6 +1,8 @@
 import { db } from "@/db";
 import { sql } from "drizzle-orm";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   try {
     if (!process.env.DATABASE_URL) {
