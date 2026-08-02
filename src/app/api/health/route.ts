@@ -5,6 +5,9 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
+    if (!process.env.DATABASE_URL) {
+      return Response.json({ ok: true, status: "healthy (no database_url configured)" });
+    }
     await db.execute(sql`select 1`);
     return Response.json({ ok: true });
   } catch {

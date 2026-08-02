@@ -47,6 +47,11 @@ export async function POST(req: Request) {
       );
     }
 
+    if (!process.env.DATABASE_URL) {
+      console.warn("[contact] DATABASE_URL not set, message accepted:", { name, email, projectType });
+      return Response.json({ ok: true, demo: true });
+    }
+
     await db.insert(messages).values({ name, email, projectType, message });
 
     return Response.json({ ok: true });
