@@ -98,14 +98,14 @@ export default function HeroSection() {
         />
 
         {/* ——— Wordmark in front of the lens ——— */}
-        <div className="pointer-events-none absolute inset-0 z-[15] flex flex-col items-center justify-center text-center">
+        <div className="pointer-events-none absolute inset-0 z-[15] flex flex-col items-center justify-center px-4 text-center">
           <div className="overflow-hidden pb-[0.12em]">
-            <span className="hero-line hero-line-left font-heading block text-[22vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[20vw] md:text-[15.5vw]">
+            <span className="hero-line hero-line-left font-heading block text-[15.5vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[15.5vw] md:text-[15.5vw]">
               OMKAR
             </span>
           </div>
           <div className="overflow-hidden pb-[0.12em]">
-            <span className="hero-line hero-line-right font-heading block text-[22vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[20vw] md:text-[15.5vw]">
+            <span className="hero-line hero-line-right font-heading block text-[15.5vw] leading-[0.84] font-extrabold tracking-[-0.03em] text-white sm:text-[15.5vw] md:text-[15.5vw]">
               LANGHE
             </span>
           </div>
