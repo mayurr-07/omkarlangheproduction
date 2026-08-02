@@ -123,7 +123,7 @@ export default function ContactSection() {
           <div className="contact-reveal mt-10 space-y-5">
             <a
               href={`mailto:${SITE.email}`}
-              className="group flex items-center gap-4 text-sm text-zinc-300 transition-colors hover:text-gold"
+              className="group flex items-center gap-4 text-sm text-zinc-300 break-all transition-colors sm:break-normal hover:text-gold"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 transition-colors group-hover:border-gold">
                 <Mail className="h-4 w-4" strokeWidth={1.5} />

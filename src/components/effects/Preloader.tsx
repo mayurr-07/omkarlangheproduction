@@ -112,10 +112,9 @@ export default function Preloader() {
         <span className="relative h-6 w-6 rounded-full border border-gold/70 bg-black" />
       </div>
 
-      <p className="pre-word absolute bottom-1/3 translate-y-16 font-mono text-[11px] tracking-[0.34em] text-zinc-500 uppercase">
+      <p className="pre-word absolute bottom-1/3 text-center px-4 font-mono text-[10px] tracking-[0.24em] text-zinc-500 uppercase sm:text-[11px] sm:tracking-[0.34em]">
         Omkar Langhe Production
       </p>
-
       <div className="absolute right-8 bottom-8 flex items-baseline gap-2 font-mono text-zinc-600">
         <span className="text-[10px] tracking-[0.3em] uppercase">Loading</span>
         <span ref={countRef} className="text-2xl text-gold tabular-nums">

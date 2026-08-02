@@ -66,7 +66,7 @@ export default function Footer() {
         </button>
 
         {/* Giant outline wordmark */}
-        <div className="mt-16 md:mt-20" aria-hidden>
+        <div className="mt-16 overflow-hidden md:mt-20" aria-hidden>
           <h2 className="text-stroke font-heading text-[13.5vw] leading-[0.82] font-extrabold tracking-tight whitespace-nowrap select-none md:text-[11vw]">
             OMKAR LANGHE
           </h2>

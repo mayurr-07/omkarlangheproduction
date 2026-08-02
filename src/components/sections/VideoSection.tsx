@@ -78,7 +78,7 @@ export default function VideoSection() {
           />
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-2 font-mono text-[10px] tracking-[0.28em] text-zinc-500 uppercase">
+        <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] tracking-[0.22em] text-zinc-500 uppercase sm:gap-x-8 sm:tracking-[0.28em]">
           <span>4K UHD</span>
           <span className="h-1 w-1 rounded-full bg-gold/60" />
           <span>60 fps aerial</span>

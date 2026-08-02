@@ -122,7 +122,7 @@ export default function GallerySection() {
                     <span className="h-px w-10 bg-white/20" />
                     {chapter.id}
                   </p>
-                  <h3 className="font-heading text-5xl leading-[0.92] font-extrabold text-white sm:text-6xl md:text-8xl">
+                  <h3 className="font-heading text-4xl leading-[0.92] font-extrabold text-white sm:text-6xl md:text-8xl">
                     {chapter.title}
                   </h3>
                   <p className="font-accent mt-3 text-xl text-gold italic sm:text-2xl md:text-3xl">

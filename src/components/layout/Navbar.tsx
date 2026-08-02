@@ -118,7 +118,7 @@ export default function Navbar() {
                   className="group flex items-baseline gap-4 py-3 text-left"
                 >
                   <span className="font-mono text-xs text-gold">{link.index}</span>
-                  <span className="font-heading text-5xl font-bold text-white transition-colors group-active:text-gold">
+                  <span className="font-heading text-4xl font-bold text-white transition-colors group-active:text-gold sm:text-5xl">
                     {link.label}
                   </span>
                 </motion.button>
